@@ -1,0 +1,88 @@
+﻿@model TrabajoFinalLabIV.ViewModel.ClubesViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Clubes</h1>
+
+<p>
+    <a asp-action="Create">Crear nuevo</a>
+</p>
+
+<form asp-action="Index" method="get">
+    <p>
+        Nombre: <input type="text" asp-for="Nombre" />        
+        Pais: <input type="text" asp-for="Pais" />
+        Categoria: 
+        <select asp-for="CategoriaId"  asp-items="@Model.ListCategorias">
+            <option value="">Todos</option>
+        </select>
+        <input type="submit" value="Buscar"/>
+    </p>
+    
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Clubes[0].ImagenEscudo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clubes[0].Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clubes[0].Resumen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clubes[0].FechaNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clubes[0].Pais)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clubes[0].Categoria)
+            </th>           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Clubes) {
+        <tr>
+            <td>
+                @if (!string.IsNullOrEmpty(item.ImagenEscudo)) {
+                    <img src="~/images/clubes/@item.ImagenEscudo"
+                        class="rounded-circle"
+                        height="80" width="80"
+                        asp-append-version="true" />
+                } else {
+                    <span>Imagen no disponible</span>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+           <td>
+                @Html.DisplayFor(modelItem => item.Resumen, new { title = item.Resumen })
+           </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pais)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria.Descripcion)
+            </td>           
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalle</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<partial name="_Paginador" for="@Model.Paginador"/>

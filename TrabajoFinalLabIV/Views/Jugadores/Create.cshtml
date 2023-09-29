@@ -1,0 +1,63 @@
+﻿@model TrabajoFinalLabIV.Models.Jugador
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<h4>Crear</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data" asp-controller="Jugadores" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Apellido" class="control-label"></label>
+                <input asp-for="Apellido" class="form-control" />
+                <span asp-validation-for="Apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombres" class="control-label"></label>
+                <input asp-for="Nombres" class="form-control" />
+                <span asp-validation-for="Nombres" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Biografia" class="control-label"></label>
+                <input asp-for="Biografia" class="form-control" />
+                <span asp-validation-for="Biografia" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                 <label asp-for="Foto" class="control-label">Foto</label>
+                <input asp-for="Foto" type="file" id="seleccionImg" class="form-control" />
+                <img id="imagen" src="" alt="Imagen seleccinada"   height="80" width="80"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClubId" class="control-label"></label>
+                <select asp-for="ClubId" class ="form-control" asp-items="ViewBag.ClubId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<form asp-action="Importar" enctype="multipart/form-data">
+    <div>
+        <label class="control-label">Seleccione archivo CSV para importar </label>
+         <input asp-for="Foto" type="file" id="import" />  
+    </div>
+    <div class="form-group">
+                <input type="submit" value="Importar" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Volver a la lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="~/js/imagenes.js"></script>
