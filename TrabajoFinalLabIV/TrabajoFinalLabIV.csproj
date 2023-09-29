@@ -7,7 +7,7 @@
     <UserSecretsId>aspnet-TrabajoFinalLabIV-392D656F-C079-4D81-A179-8A5A309D7064</UserSecretsId>
   </PropertyGroup>
 
-  m<ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.21" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.21" />

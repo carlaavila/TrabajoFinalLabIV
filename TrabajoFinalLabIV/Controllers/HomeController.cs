@@ -21,15 +21,14 @@ namespace TrabajoFinalLabIV.Controllers
 
 		public IActionResult Index()
 		{
-			
 			var viewModel = new ClubesViewModel
 			{
-				Clubes = _context.Clubes.ToList(),
-				
+				Clubes = _context.Clubes.OrderBy(club => club.FechaNacimiento).ToList()
 			};
 
 			return View(viewModel);
 		}
+
 
 		public async Task<IActionResult> Details(int? id)
 		{

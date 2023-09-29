@@ -6,7 +6,7 @@ namespace TrabajoFinalLabIV.Models
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public string Resumen { get; set; }
+        public string? Resumen { get; set; }
 
         [Display(Name = "Fecha de Nacimiento")]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
@@ -15,7 +15,7 @@ namespace TrabajoFinalLabIV.Models
         [Display(Name = "Imagen Escudo")]
         public string? ImagenEscudo { get; set; }
       
-        public string Pais { get; set; }
+        public string? Pais { get; set; }
 
         // Relación con la clase "Categoria"
         public Categoria? Categoria { get; set; }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RobtZJdV6b4eVpvOmocoBlY7RoJz7vjw/Rxoy4iFUuE=",
+  "Hash": "NR3wRtrg/ILyioUnzNnD/0wgqBzx+X1NmFq9ssDfKMc=",
   "Source": "TrabajoFinalLabIV",
   "BasePath": "_content/TrabajoFinalLabIV",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\clubes\\0faa477d26fd4cdfba2298f7119c3d15.JPG",
+      "SourceId": "TrabajoFinalLabIV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\",
+      "BasePath": "_content/TrabajoFinalLabIV",
+      "RelativePath": "images/clubes/0faa477d26fd4cdfba2298f7119c3d15.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\clubes\\0faa477d26fd4cdfba2298f7119c3d15.JPG"
+    },
+    {
       "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\clubes\\5059165bbcf44f76a6111721ca20d1d7.JPG",
       "SourceId": "TrabajoFinalLabIV",
       "SourceType": "Discovered",
@@ -1156,6 +1173,23 @@
       "OriginalItemSpec": "wwwroot\\images\\clubes\\5c3ba765721f4bc9af9cd175291ffc4c.JPG"
     },
     {
+      "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\clubes\\6c1a8b9738be4700abc3f565030a01ac.JPG",
+      "SourceId": "TrabajoFinalLabIV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\",
+      "BasePath": "_content/TrabajoFinalLabIV",
+      "RelativePath": "images/clubes/6c1a8b9738be4700abc3f565030a01ac.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\clubes\\6c1a8b9738be4700abc3f565030a01ac.JPG"
+    },
+    {
       "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\clubes\\74d4853d02e543558d98c6f136c664cf.JPG",
       "SourceId": "TrabajoFinalLabIV",
       "SourceType": "Discovered",
@@ -1171,23 +1205,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\clubes\\74d4853d02e543558d98c6f136c664cf.JPG"
-    },
-    {
-      "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\clubes\\888e0f74daf4490f9788f872a1e8d9a6.JPG",
-      "SourceId": "TrabajoFinalLabIV",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\",
-      "BasePath": "_content/TrabajoFinalLabIV",
-      "RelativePath": "images/clubes/888e0f74daf4490f9788f872a1e8d9a6.JPG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\clubes\\888e0f74daf4490f9788f872a1e8d9a6.JPG"
     },
     {
       "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\clubes\\8e985356f9eb4c88b853f88995c23b4e.JPG",
@@ -1241,6 +1258,57 @@
       "OriginalItemSpec": "wwwroot\\images\\clubes\\b9f3fe458bd64ce5ba0059436f949565.JPG"
     },
     {
+      "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\clubes\\d855f10403334f76b06ec4f9f89a4bdb.JPG",
+      "SourceId": "TrabajoFinalLabIV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\",
+      "BasePath": "_content/TrabajoFinalLabIV",
+      "RelativePath": "images/clubes/d855f10403334f76b06ec4f9f89a4bdb.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\clubes\\d855f10403334f76b06ec4f9f89a4bdb.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\clubes\\e23d64f542274ac0b4166466096fa860.JPG",
+      "SourceId": "TrabajoFinalLabIV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\",
+      "BasePath": "_content/TrabajoFinalLabIV",
+      "RelativePath": "images/clubes/e23d64f542274ac0b4166466096fa860.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\clubes\\e23d64f542274ac0b4166466096fa860.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\clubes\\ff74943f8639406cb66c9aa1d66070d0.JPG",
+      "SourceId": "TrabajoFinalLabIV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\",
+      "BasePath": "_content/TrabajoFinalLabIV",
+      "RelativePath": "images/clubes/ff74943f8639406cb66c9aa1d66070d0.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\clubes\\ff74943f8639406cb66c9aa1d66070d0.JPG"
+    },
+    {
       "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\jugadores\\3624b2b2be70496ead64a15014c89a6f.JPG",
       "SourceId": "TrabajoFinalLabIV",
       "SourceType": "Discovered",
@@ -1275,12 +1343,12 @@
       "OriginalItemSpec": "wwwroot\\images\\jugadores\\3d608aebce9f4a08816ec1dded3aa657.JPG"
     },
     {
-      "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\jugadores\\8241b5f48e7d41f98ec27eba046cc59f.JPG",
+      "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\jugadores\\6b964c6532ad4248a6328b62587ac2b4.jpg",
       "SourceId": "TrabajoFinalLabIV",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\",
       "BasePath": "_content/TrabajoFinalLabIV",
-      "RelativePath": "images/jugadores/8241b5f48e7d41f98ec27eba046cc59f.JPG",
+      "RelativePath": "images/jugadores/6b964c6532ad4248a6328b62587ac2b4.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1289,7 +1357,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\jugadores\\8241b5f48e7d41f98ec27eba046cc59f.JPG"
+      "OriginalItemSpec": "wwwroot\\images\\jugadores\\6b964c6532ad4248a6328b62587ac2b4.jpg"
     },
     {
       "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\jugadores\\8deacc41b0794efda78b4dd0ce5b4a66.JPG",
@@ -1307,6 +1375,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\jugadores\\8deacc41b0794efda78b4dd0ce5b4a66.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\jugadores\\96a214a10b364fb6a83ed7dbec5a2446.JPG",
+      "SourceId": "TrabajoFinalLabIV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\",
+      "BasePath": "_content/TrabajoFinalLabIV",
+      "RelativePath": "images/jugadores/96a214a10b364fb6a83ed7dbec5a2446.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\jugadores\\96a214a10b364fb6a83ed7dbec5a2446.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\jugadores\\bc6330ce0f394129937997d325a28683.JPG",
+      "SourceId": "TrabajoFinalLabIV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\",
+      "BasePath": "_content/TrabajoFinalLabIV",
+      "RelativePath": "images/jugadores/bc6330ce0f394129937997d325a28683.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\jugadores\\bc6330ce0f394129937997d325a28683.JPG"
     },
     {
       "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\images\\jugadores\\f588a4d65a464634bd32d294e647deab.JPG",

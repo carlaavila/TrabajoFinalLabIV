@@ -10,6 +10,7 @@ namespace TrabajoFinalLabIV.ViewModel
 		public int? CategoriaId { get; set; }
 		public string? Nombre { get; set; }
 		public string? Pais { get; set; }
+		public int? FechaNacimiento { get; set; }
 		public PaginadorViewModel Paginador { get; set; }
 	}
 

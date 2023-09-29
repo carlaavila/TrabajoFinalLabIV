@@ -215,7 +215,8 @@ namespace TrabajoFinalLabIV.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClubId"] = new SelectList(_context.Categorias, "Id", "Nombre", jugador.ClubId);
+            ViewBag.Clubes = new SelectList(_context.Clubes, "Id", "Nombre");
+
             return View(jugador);
         }
 
