@@ -1,55 +1,53 @@
 ﻿@model TrabajoFinalLabIV.Models.Club
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Crear";
 }
 
-<h4>Agregar</h4>
+<h4>Agregar Club</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form asp-action="Create" enctype="multipart/form-data" asp-controller="Clubes" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
+                <label asp-for="Nombre" class="control-label">Nombre</label>
                 <input asp-for="Nombre" class="form-control" />
                 <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Resumen" class="control-label"></label>
+                <label asp-for="Resumen" class="control-label">Resumen</label>
                 <input asp-for="Resumen" class="form-control" />
                 <span asp-validation-for="Resumen" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FechaNacimiento" class="control-label"></label>
+                <label asp-for="FechaNacimiento" class="control-label">Fecha de Nacimiento</label>
                 <input asp-for="FechaNacimiento" class="form-control" type="date" />
                 <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
-            </div>         
+            </div>
             <div class="form-group">
-                <label asp-for="Pais" class="control-label"></label>
+                <label asp-for="Pais" class="control-label">País</label>
                 <input asp-for="Pais" class="form-control" />
                 <span asp-validation-for="Pais" class="text-danger"></span>
             </div>
-             <div class="form-group">
-                <label asp-for="CategoriaId" class="control-label"></label>
-                <select asp-for="CategoriaId" class ="form-control" asp-items="ViewBag.CategoriaId"></select>
+            <div class="form-group">
+                <label asp-for="CategoriaId" class="control-label">Categoría</label>
+                <select asp-for="CategoriaId" class="form-control" asp-items="ViewBag.CategoriaId"></select>
             </div>
             <div class="form-group">
-                 <label asp-for="ImagenEscudo" class="control-label">Imagen escudo</label>
+                <label asp-for="ImagenEscudo" class="control-label">Imagen del Escudo</label>
                 <input asp-for="ImagenEscudo" type="file" id="seleccionImg" class="form-control" />
-                <img id="imagen" src="" alt="Imagen seleccinada"   height="80" width="80"/>
+                <img id="imagen" src="" alt="Imagen seleccionada" height="80" width="80" />
             </div>
-             <input asp-for="ImagenEscudo" type="hidden"/>
-            <div class="form-group">
-                <input type="submit" value="Crear" class="btn btn-primary" />
+            <input asp-for="ImagenEscudo" type="hidden" />
+            <div class="form-group mt-4 text-center">
+                <input type="submit" value="Crear" class="btn btn-primary btn-sm" />
+                 <a asp-action="Index" class="btn btn-secondary btn-sm">Volver a la lista</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Volver a la lista</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
@@ -57,3 +55,4 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="~/js/imagenes.js"></script>
+

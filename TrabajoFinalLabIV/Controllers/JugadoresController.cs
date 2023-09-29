@@ -79,8 +79,27 @@ namespace TrabajoFinalLabIV.Controllers
         // GET: Jugadores/Create
         public IActionResult Create()
         {
-            ViewData["ClubId"] = new SelectList(_context.Clubes, "Id", "Nombre");
+            
+            var clubes = _context.Clubes.ToList();
+           
+            var clubesSelectList = clubes.Select(club => new SelectListItem
+            {
+                Value = club.Id.ToString(), 
+                Text = club.Nombre
+            }).ToList();
+
+       
+            clubesSelectList.Insert(0, new SelectListItem
+            {
+                Value = "", 
+                Text = "Selecciona un club"
+            });
+
+        
+            ViewBag.Clubes = clubesSelectList;
+
             return View();
+          
         }
 
         // POST: Jugadores/Create

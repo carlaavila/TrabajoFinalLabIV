@@ -7,62 +7,53 @@
 <h1>Jugadores</h1>
 
 <p>
-    <a asp-action="Create">Crear nuevo</a>
+    <a asp-action="Create" class="btn btn-primary">Crear nuevo</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Jugadores[0].Foto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Jugadores[0].Apellido)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Jugadores[0].Nombres)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Jugadores[0].Biografia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Jugadores[0].Club)
-            </th>            
-            <th></th>
+            <th>Foto</th>
+            <th>Apellido</th>
+            <th>Nombres</th>
+            <th>Biografía</th>
+            <th>Club</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Jugadores) {
-        <tr>
-            <td>
-                @if (!string.IsNullOrEmpty(item.Foto)) {
-                    <img src="~/images/jugadores/@item.Foto"
-                        class="rounded-circle"
-                        height="80" width="80"
-                        asp-append-version="true" />
-                } else {
-                    <span>Imagen no disponible</span>
-                }
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Apellido)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombres)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Biografia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Club.Nombre)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Jugadores)
+        {
+            <tr>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.Foto))
+                    {
+                        <img src="~/images/jugadores/@item.Foto"
+                             class="rounded-circle"
+                             height="80" width="80"
+                             asp-append-version="true" alt="Foto de @item.Apellido @item.Nombres" />
+                    }
+                    else
+                    {
+                        <span>Imagen no disponible</span>
+                    }
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.Apellido)</td>
+                <td>@Html.DisplayFor(modelItem => item.Nombres)</td>
+                <td>@Html.DisplayFor(modelItem => item.Biografia)</td>
+                <td>@(item.Club != null ? Html.DisplayFor(modelItem => item.Club.Nombre) : "Sin Club")</td>
+                <td>
+                    <div class="btn-group-vertical">
+                     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-primary btn-sm">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-secondary btn-sm">Detalles</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger btn-sm">Eliminar</a>
+                    </div>
+                   
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
 
-<partial name="_Paginador" for="@Model.Paginador"/>
+<partial name="_Paginador" for="@Model.Paginador" />
+

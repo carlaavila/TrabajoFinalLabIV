@@ -11,55 +11,45 @@
     </div>
 }
 
-<h4>¿Estas seguro que deseas eliminar?</h4>
-<div>  
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImagenEscudo)
-        </dt>
-         <dd class = "col-sm-10">
-            <img src="~/images/clubes/@Model.ImagenEscudo"
-               class="rounded-circle"
-               height="80" width="80"
-               asp-append-version="true"
-               />
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nombre)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nombre)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Resumen)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Resumen)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaNacimiento)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaNacimiento)
-        </dd>        
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Pais)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Pais)
-        </dd>
-         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Categoria)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Categoria.Descripcion)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
-        <a asp-action="Index">Volver a la lista</a>
-    </form>
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4 class="card-title">Eliminar Club</h4>
+                </div>
+                <div class="card-body">
+                    <h4 class="text-danger">¿Estás seguro que deseas eliminar este club?</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4">Imagen del Escudo</dt>
+                        <dd class="col-sm-8">
+                            <img src="~/images/clubes/@Model.ImagenEscudo"
+                                 height="100" width="100"
+                                 asp-append-version="true"
+                                 alt="Imagen del Escudo del Club" />
+                        </dd>
+                        <dt class="col-sm-4">Nombre</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Nombre)</dd>
+                        <dt class="col-sm-4">Resumen</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Resumen)</dd>
+                        <dt class="col-sm-4">Fecha de Nacimiento</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.FechaNacimiento)</dd>
+                        <dt class="col-sm-4">País</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Pais)</dd>
+                        <dt class="col-sm-4">Categoría</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Categoria.Descripcion)</dd>
+                    </dl>
+                </div>
+                <div class="card-footer text-center">
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id" />
+                        <button type="submit" class="btn btn-danger btn-sm">Eliminar</button> 
+                        <a asp-action="Index" class="btn btn-secondary btn-sm">Volver a la lista</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+

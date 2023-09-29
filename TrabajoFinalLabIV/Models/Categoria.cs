@@ -7,5 +7,6 @@
 
         // Propiedad de navegación a Clubes
         public List<Club>? Clubes { get; set; }
+      
     }
 }

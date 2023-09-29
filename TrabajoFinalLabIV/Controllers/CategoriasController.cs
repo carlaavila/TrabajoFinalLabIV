@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TrabajoFinalLabIV.Data;
 using TrabajoFinalLabIV.Models;
+using TrabajoFinalLabIV.ViewModel;
 
 namespace TrabajoFinalLabIV.Controllers
 {
@@ -26,11 +27,30 @@ namespace TrabajoFinalLabIV.Controllers
         [AllowAnonymous]
 
         // GET: Categorias
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int pagina = 1)
         {
-              return _context.Categorias != null ? 
-                          View(await _context.Categorias.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Categorias'  is null.");
+            int RegistrosPorPagina = 2;
+
+            var applicationDbContext = _context.Jugadores;
+
+            var registrosMostrar = _context.Categorias
+               .Skip((pagina - 1) * RegistrosPorPagina)
+               .Take(RegistrosPorPagina);
+
+            //Crear el modelo para la vista
+            CategoriasViewModel modelo = new CategoriasViewModel()
+            {
+                Categorias = await registrosMostrar.ToListAsync(),
+                Paginador = new PaginadorViewModel()
+                {
+                    PaginaActual = pagina,
+                    RegistrosPorPagina = RegistrosPorPagina,
+                    TotalRegistros = await applicationDbContext.CountAsync()
+                }
+
+            };
+
+            return View(modelo);
         }
 
         // GET: Categorias/Details/5

@@ -1,67 +1,69 @@
-﻿    @model TrabajoFinalLabIV.Models.Jugador
+﻿@model TrabajoFinalLabIV.Models.Jugador
 
-    @{
-        ViewData["Title"] = "Edit";
-    }
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
 
-
-    <h4>Editar</h4>
+<div class="container mt-5">
+    <h4 class="text-center">Editar Jugador</h4>
     <hr />
-    <div class="row">
-        <div class="col-md-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
             <form asp-action="Edit" enctype="multipart/form-data">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <input type="hidden" asp-for="Id" />
                 <div class="form-group">
-                    <label asp-for="Apellido" class="control-label"></label>
+                    <label asp-for="Apellido" class="control-label">Apellido</label>
                     <input asp-for="Apellido" class="form-control" />
                     <span asp-validation-for="Apellido" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Nombres" class="control-label"></label>
+                    <label asp-for="Nombres" class="control-label">Nombres</label>
                     <input asp-for="Nombres" class="form-control" />
                     <span asp-validation-for="Nombres" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Biografia" class="control-label"></label>
-                    <input asp-for="Biografia" class="form-control" />
+                    <label asp-for="Biografia" class="control-label">Biografía</label>
+                    <textarea asp-for="Biografia" class="form-control" rows="4"></textarea>
                     <span asp-validation-for="Biografia" class="text-danger"></span>
                 </div>
-               <div class="form-group">
+                <div class="form-group">
                     <label asp-for="Foto" class="control-label">Foto</label>
                     <img src="~/images/jugadores/@Model.Foto"
-                        id="imagen"                   
-                        height="80" width="80"
-                        asp-append-version="true"/>
-                   <input asp-for="Foto" type="file" id="seleccionImg" class="form-control" />
+                         id="imagen"                   
+                         class="rounded-circle"
+                         height="100" width="100"
+                         asp-append-version="true"
+                         alt="Foto del Jugador" />
+                    <input asp-for="Foto" type="file" id="seleccionImg" class="form-control" />
+                    <input type="hidden" asp-for="Foto" value="@Model.Foto" />
                 </div>
-                <input type="hidden" asp-for="Foto" value="@Model.Foto"/>
                 <div class="form-group">
-                <label asp-for="ClubId" class="control-label">Club</label>
-                <select asp-for="ClubId" class="form-control">
-                    <option value="">Selecciona un club</option>
-                    @foreach (var club in ViewBag.Clubes)
-                    {
-                        <option value="@club.Value">@club.Text</option>
-                    }
-                </select>
-                <span asp-validation-for="ClubId" class="text-danger"></span>
-            </div>
-
-                <div class="form-group">
-                    <input type="submit" value="Guardar" class="btn btn-primary" />
+                    <label asp-for="ClubId" class="control-label">Club</label>
+                    <select asp-for="ClubId" class="form-control">
+                        <option value="">Selecciona un club</option>
+                        @foreach (var club in ViewBag.Clubes)
+                        {
+                            <option value="@club.Value">@club.Text</option>
+                        }
+                    </select>
+                    <span asp-validation-for="ClubId" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Guardar" class="btn btn-primary btn-sm" />
                 </div>
             </form>
         </div>
     </div>
-
-    <div>
-        <a asp-action="Index">Volver a la lista</a>
+    <div class="text-center mt-3">
+        <a asp-action="Index" class="btn btn-secondary btn-sm">Volver a la lista</a>
     </div>
+</div>
 
-    @section Scripts {
-        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    }
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="~/js/imagenes.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="~/js/imagenes.js"></script>
