@@ -133,8 +133,7 @@ namespace TrabajoFinalLabIV.Controllers
                                 archivoFoto.CopyTo(filestream);
                                 jugador.Foto = archivoDestino;
                             };
-
-                            // Registrar que se ha guardado la foto con éxito
+                          
                             _logger.LogInformation("Se guardó la foto del jugador correctamente en: {Ruta}", rutaDestino);
                         }
                     }
@@ -142,7 +141,7 @@ namespace TrabajoFinalLabIV.Controllers
                     _context.Add(jugador);
                     await _context.SaveChangesAsync();
 
-                    // Registrar que se ha guardado el jugador con éxito
+                
                     _logger.LogInformation("Se agregó un nuevo jugador con éxito.");
 
                     return RedirectToAction(nameof(Index));
@@ -150,10 +149,8 @@ namespace TrabajoFinalLabIV.Controllers
             }
             catch (Exception ex)
             {
-                // En caso de error, registrar la excepción
                 _logger.LogError(ex, "Error al crear el jugador.");
 
-                // Agregar un mensaje de error al ModelState
                 ModelState.AddModelError(string.Empty, "Ocurrió un error al crear el jugador.");
             }
             ViewData["ClubId"] = new SelectList(_context.Categorias, "Id", "Descripcion", jugador.ClubId);

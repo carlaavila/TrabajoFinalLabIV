@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ned8XPZCTfM8mVLns4kqVxr1SmMCdLY0uHMAqtrffu4=",
+  "Hash": "aPSacIPXYdvVYTaDOFcEYTs40TXlYMdbLdSNI4IznRo=",
   "Source": "TrabajoFinalLabIV",
   "BasePath": "_content/TrabajoFinalLabIV",
   "Mode": "Default",
@@ -1511,6 +1511,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\importaciones\\1a8ac858a9794e308feb9e057f3b56a8.CSV"
+    },
+    {
+      "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\importaciones\\23c43a62e1134bca9155aad5e47ce2c4.CSV",
+      "SourceId": "TrabajoFinalLabIV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\",
+      "BasePath": "_content/TrabajoFinalLabIV",
+      "RelativePath": "importaciones/23c43a62e1134bca9155aad5e47ce2c4.CSV",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\importaciones\\23c43a62e1134bca9155aad5e47ce2c4.CSV"
     },
     {
       "Identity": "C:\\Users\\Carla\\Desktop\\LabIV\\TrabajoFinalLabIV\\TrabajoFinalLabIV\\wwwroot\\importaciones\\36aa10c7d2734dff895490bb37c2ae7c.CSV",

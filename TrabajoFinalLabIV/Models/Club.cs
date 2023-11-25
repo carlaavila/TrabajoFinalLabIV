@@ -9,7 +9,7 @@ namespace TrabajoFinalLabIV.Models
         public string? Resumen { get; set; }
 
         [Display(Name = "Fecha de Nacimiento")]
-        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
+        //[DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime FechaNacimiento { get; set; }
 
         [Display(Name = "Imagen Escudo")]
